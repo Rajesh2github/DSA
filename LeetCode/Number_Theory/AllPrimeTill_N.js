@@ -35,7 +35,7 @@ const AllPrime2 = (N) => {
     arr[0]= false;
     for(let i = 2; i*i <= N; i++){
         if(isPrime(i)){
-            for(let j = i; j <= N; j++){
+            for(let j = i*i; j <= N; j++){
                 arr[i*j-1] = false;
             }
         }

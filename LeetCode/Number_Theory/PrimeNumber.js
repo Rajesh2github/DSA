@@ -21,7 +21,7 @@ const isPrime1 = (n) => {
     }
     let i = 5
     while (i * i <= n) {
-      if (n % i == 0 || n % (i + 1) == 0) {
+      if (n % i == 0 || n % (i + 2) == 0) {
         return false
       }
       i += 6
@@ -29,5 +29,5 @@ const isPrime1 = (n) => {
     return true
   }
   
-  console.log(isPrime1(5))
+  console.log(isPrime1(49))
   
